@@ -16,9 +16,11 @@ module choinka
     wire div_zegar;
 
     always@(posedge zegar)
+        /*
         if (reset)
             div_reg <= 0;
         else
+        */
             div_reg <= div_next;
 
     assign div_next = div_reg + 1;
